@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+            background-image: url('bgbaru.png'); /* Ganti path dengan path ke gambar Anda */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            opacity: 0.9; /* Menurunkan opasitas menjadi 90% */
+            filter: alpha(opacity=90); /* Kompatibilitas untuk IE */
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .card {
+            width: 300px;
+            height: 300px;
+            background: white;
+            border-radius: 32px;
+            padding: 3px;
+            position: relative;
+            transition: transform 0.3s ease-in;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-img-top{
+            object-fit: cover; 
+            height: 200px; 
+            width: 100%;
+            background: white;
+            border-radius: 32px;
+            padding: 3px;
+            position: relative;
+        }
+        h1, h2, h3 , h5, a{
+    font-family: 'Your Selected Font', comic;
+        }
+        /* Tambahkan gaya tambahan sesuai kebutuhan Anda */
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-transparant bg-transparant fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo lidia.jpeg" alt="Logo" height="30" class="d-inline-block align-top">
+                Portofolio Saya
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang Saya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+                <form class="d-flex mx-2">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Cari proyek..." aria-label="Cari">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bagian Portfolio -->
+    <section id="portfolio" class="bg-transparant">
+        <div class="container">
+            <h2 class="text-center mb-5">Beranda</h2>
+            <div class="grid">
+                <div class="grid-sizer col-md-4"></div>
+                <div class="grid-item col-md-4 mb-4">
+                    <div class="card">
+                        <img src="design 1-1.png" class="card-img-top" alt="Proyek 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Desain brand identity</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                                Lihat Deskripsi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-md-4 mb-4">
+                    <div class="card">
+                        <img src="design 2.png" class="card-img-top" alt="Proyek 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Desain brand identity</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                                Lihat Deskripsi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tambahkan lebih banyak blok card sesuai kebutuhan -->
+                <div class="grid-item col-md-4 mb-4">
+                    <div class="card">
+                        <img src="design 3-1.png" class="card-img-top" alt="Proyek 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Desain brand identity</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                                Lihat Deskripsi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-md-4 mb-4">
+                    <div class="card">
+                        <img src="biola.png" class="card-img-top" alt="Proyek 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Desain brand identity</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                                Lihat Deskripsi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-md-4 mb-4">
+                    <div class="card">
+                        <img src="harpa.png" class="card-img-top" alt="Proyek 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Desain brand identity</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal5">
+                                Lihat Deskripsi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-md-4 mb-4">
+                    <div class="card">
+                        <img src="kolintang.png" class="card-img-top" alt="Proyek 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Desain brand identity</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                                Lihat Deskripsi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-md-4 mb-4">
+                    <div class="card">
+                        <img src="mala.png" class="card-img-top" alt="Proyek 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Desain brand identity</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal7">
+                                Lihat Deskripsi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-md-4 mb-4">
+                    <div class="card">
+                        <img src="mangga.png" class="card-img-top" alt="Proyek 8">
+                        <div class="card-body">
+                            <h5 class="card-title">Desain brand identity</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal8">
+                                Lihat Deskripsi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-md-4 mb-4">
+                    <div class="card">
+                        <img src="mikroskop.png" class="card-img-top" alt="Proyek 9">
+                        <div class="card-body">
+                            <h5 class="card-title">Desain brand identity</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal9">
+                                Lihat Deskripsi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-md-4 mb-4">
+                    <div class="card">
+                        <img src="monyet.png" class="card-img-top" alt="Proyek 10">
+                        <div class="card-body">
+                            <h5 class="card-title">Desain brand identity</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal10">
+                                Lihat Deskripsi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-md-4 mb-4">
+                    <div class="card">
+                        <img src="rebana.png" class="card-img-top" alt="Proyek 11">
+                        <div class="card-body">
+                            <h5 class="card-title">Desain brand identity</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal11">
+                                Lihat Deskripsi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-md-4 mb-4">
+                    <div class="card">
+                        <img src="sate.png" class="card-img-top" alt="Proyek 12">
+                        <div class="card-body">
+                            <h5 class="card-title">Desain brand identity</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal12">
+                                Lihat Deskripsi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-md-4 mb-4">
+                    <div class="card">
+                        <img src="simbal.png" class="card-img-top" alt="Proyek 13">
+                        <div class="card-body">
+                            <h5 class="card-title">Desain brand identity</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal13">
+                                Lihat Deskripsi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-md-4 mb-4">
+                    <div class="card">
+                        <img src="trompet.png" class="card-img-top" alt="Proyek 14">
+                        <div class="card-body">
+                            <h5 class="card-title">Desain brand identity</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal14">
+                                Lihat Deskripsi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal untuk menampilkan deskripsi proyek 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1">Deskripsi Desain brand identity</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tempatkan konten deskripsi proyek 1 di sini -->
+                    <p>Ini adalah deskripsi proyek yang menarik!</p>
+                    <a href="design 1-1.png" class="btn btn-primary" download>Unduh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk menampilkan deskripsi proyek 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel2">Deskripsi Desain brand identity</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tempatkan konten deskripsi proyek 2 di sini -->
+                    <p>Ini adalah deskripsi proyek yang menarik!</p>
+                    <a href="design 2.png" class="btn btn-primary" download>Unduh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk menampilkan deskripsi proyek 3 -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel3">Deskripsi Desain brand identity</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tempatkan konten deskripsi proyek 1 di sini -->
+                    <p>Ini adalah deskripsi proyek yang menarik!</p>
+                    <a href="design 3-1.png" class="btn btn-primary" download>Unduh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal untuk menampilkan deskripsi proyek 4 -->
+    <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel4">Deskripsi Desain brand identity</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tempatkan konten deskripsi proyek 1 di sini -->
+                    <p>Ini adalah deskripsi proyek yang menarik!</p>
+                    <a href="biola.png" class="btn btn-primary" download>Unduh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal untuk menampilkan deskripsi proyek 5 -->
+    <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel5">Deskripsi Desain brand identity</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tempatkan konten deskripsi proyek 1 di sini -->
+                    <p>Ini adalah deskripsi proyek yang menarik!</p>
+                    <a href="harpa.png" class="btn btn-primary" download>Unduh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal untuk menampilkan deskripsi proyek 6 -->
+    <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModalLabel6" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel6">Deskripsi Desain brand identity</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tempatkan konten deskripsi proyek 1 di sini -->
+                    <p>Ini adalah deskripsi proyek yang menarik!</p>
+                    <a href="kolintang.png" class="btn btn-primary" download>Unduh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal untuk menampilkan deskripsi proyek 7 -->
+    <div class="modal fade" id="projectModal7" tabindex="-1" aria-labelledby="projectModalLabel7" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel7">Deskripsi Desain brand identity</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tempatkan konten deskripsi proyek 1 di sini -->
+                    <p>Ini adalah deskripsi proyek yang menarik!</p>
+                    <a href="mala.png" class="btn btn-primary" download>Unduh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal untuk menampilkan deskripsi proyek 8 -->
+    <div class="modal fade" id="projectModal8" tabindex="-1" aria-labelledby="projectModalLabel8" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel8">Deskripsi Desain brand identity</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tempatkan konten deskripsi proyek 1 di sini -->
+                    <p>Ini adalah deskripsi proyek yang menarik!</p>
+                    <a href="mangga.png" class="btn btn-primary" download>Unduh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal untuk menampilkan deskripsi proyek 9 -->
+    <div class="modal fade" id="projectModal9" tabindex="-1" aria-labelledby="projectModalLabel9" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel9">Deskripsi Desain brand identity</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tempatkan konten deskripsi proyek 1 di sini -->
+                    <p>Ini adalah deskripsi proyek yang menarik!</p>
+                    <a href="mikroskop.png" class="btn btn-primary" download>Unduh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal untuk menampilkan deskripsi proyek 10 -->
+    <div class="modal fade" id="projectModal10" tabindex="-1" aria-labelledby="projectModalLabel10" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel10">Deskripsi Desain brand identity</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tempatkan konten deskripsi proyek 1 di sini -->
+                    <p>Ini adalah deskripsi proyek yang menarik!</p>
+                    <a href="monyet.png" class="btn btn-primary" download>Unduh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal untuk menampilkan deskripsi proyek 11 -->
+    <div class="modal fade" id="projectModal11" tabindex="-1" aria-labelledby="projectModalLabel11" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel11">Deskripsi Desain brand identity</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tempatkan konten deskripsi proyek 1 di sini -->
+                    <p>Ini adalah deskripsi proyek yang menarik!</p>
+                    <a href="rebana.png" class="btn btn-primary" download>Unduh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal untuk menampilkan deskripsi proyek 12 -->
+<div class="modal fade" id="projectModal12" tabindex="-1" aria-labelledby="projectModalLabel12" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel12">Deskripsi Desain brand identity</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Tempatkan konten deskripsi proyek 1 di sini -->
+                <p>Ini adalah deskripsi proyek yang menarik!</p>
+                <a href="sate.png" class="btn btn-primary" download>Unduh</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal untuk menampilkan deskripsi proyek 13 -->
+<div class="modal fade" id="projectModal13" tabindex="-1" aria-labelledby="projectModalLabel13" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel13">Deskripsi Desain brand identity</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Tempatkan konten deskripsi proyek 1 di sini -->
+                <p>Ini adalah deskripsi proyek yang menarik!</p>
+                <a href="simbal.png" class="btn btn-primary" download>Unduh</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal untuk menampilkan deskripsi proyek 14 -->
+<div class="modal fade" id="projectModal14" tabindex="-1" aria-labelledby="projectModalLabel14" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel14">Deskripsi Desain brand identity</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Tempatkan konten deskripsi proyek 1 di sini -->
+                <p>Ini adalah deskripsi proyek yang menarik!</p>
+                <a href="trompet.png" class="btn btn-primary" download>Unduh</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- ... (Elemen proyek lainnya dan bagian HTML lainnya) ... -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var grid = new Masonry('.grid', {
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+            });
+
+            document.getElementById('searchInput').addEventListener('input', function() {
+                var searchQuery = this.value.toLowerCase();
+                var items = document.querySelectorAll('.grid-item');
+
+                items.forEach(function(item) {
+                    var title = item.querySelector('.card-title').innerText.toLowerCase();
+                    var description = item.querySelector('.card-text').innerText.toLowerCase();
+
+                    if (title.includes(searchQuery) || description.includes(searchQuery)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                grid.layout();
+            });
+        });
+    </script>
+</body>
+</html>
